@@ -8,18 +8,24 @@ import { Diagnostic } from '@ionic-native/diagnostic';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ListPage } from '../pages/list/list';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 import { PositioningPage } from '../pages/positioning/positioning';
 import { NavbarComponent } from '../components/navbar/navbar';
 import { MapButtonComponent } from '../components/mapButton/mapButton';
 import { PermissionsService } from '../services/permissions';
 
 @NgModule({
+@NgModule({
   declarations: [
-    MyApp,
-    HomePage,
-    PositioningPage,
-    NavbarComponent,
-    MapButtonComponent
+	MyApp,
+	HomePage,
+	ListPage
+	PositioningPage,
+	NavbarComponent,
+	MapButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +35,7 @@ import { PermissionsService } from '../services/permissions';
   entryComponents: [
     MyApp,
     HomePage,
+	ListPage,
     PositioningPage
   ],
   providers: [
